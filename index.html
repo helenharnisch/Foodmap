@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://use.fontawesome.com/f8bd552b09.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+    <title>Foodmap</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 text-center">
+          <!-- Vista splash -->
+          <div class="logo">
+            <h1>Foodmap</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 text-center">
+          <!-- Vista principal -->
+          <div class="main-view">
+            <div class="page-header">
+              <h1>Foodmap</h1>
+            </div>
+            <div class="mapa">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d89564.71284424076!2d-70.66432050007994!3d-33.46314983743971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2scl!4v1512508250978" width="400" height="300" frameborder="0" style="border:0" allowfullscreen class="img-thumbnail"></iframe>
+            </div>
+            <div class="page-header">
+              <h2>Comida cerca de ti</h2>
+            </div>
+            <!-- Dropdown menú -->
+            <div class="category_list dropdown">
+              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                Restaurantes
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li><a href="#" class="category_item" category="all">Todos</a></li>
+                <li><a href="#" class="category_item" category="aperitivos">Aperitivos</a></li>
+                <li><a href="#" class="category_item" category="carnes">Carnes</a></li>
+                <li><a href="#" class="category_item" category="ensaladas">Ensaladas</a></li>
+                <li><a href="#" class="category_item" category="japonesa">Japonesa</a></li>
+                <li><a href="#" class="category_item" category="pizza">Pizza</a></li>
+                <li><a href="#" class="category_item" category="sandwich">Sandwich</a></li>
+              </ul>
+            </div>
+            <div class="container">
+              <div class="row">
+                <!-- lista de restaurant -->
+                <div class="restaurant-list">
+                  <div class="col-xs-4">
+                    <div class="restaurant-item" category="aperitivos">
+                      <img data-toggle="modal" data-target="#ModalAperitivo" src="assets/img/aperitivo.jpg" alt="foto-aperitivo" class="img-thumbnail">
+                    </div>
+                  </div>
+                  <div class="col-xs-4">
+                    <div class="restaurant-item" category="carnes">
+                      <img data-toggle="modal" data-target="#ModalCarnes"
+                      src="assets/img/carnes.jpg" alt="foto-carnes" class="img-thumbnail">
+                    </div>
+                  </div>
+                  <div class="col-xs-4">
+                    <div class="restaurant-item" category="ensaladas">
+                      <img data-toggle="modal" data-target="#ModalEnsaladas"
+                      src="assets/img/ensalada.jpg" alt="foto-ensalada" class="img-thumbnail">
+                    </div>
+                  </div>
+                  <div class="col-xs-4">
+                    <div class="restaurant-item" category="japonesa">
+                      <img data-toggle="modal" data-target="#ModalJaponesa"
+                      src="assets/img/japonesa.jpg" alt="foto-japonesa" class="img-thumbnail">
+                    </div>
+                  </div>
+                  <div class="col-xs-4">
+                    <div class="restaurant-item" category="pizza">
+                      <img data-toggle="modal" data-target="#ModalPizza"
+                      src="assets/img/pizza.jpg" alt="foto-pizza" class="img-thumbnail">
+                    </div>
+                  </div>
+                  <div class="col-xs-4">
+                    <div class="restaurant-item" category="sandwich">
+                      <img data-toggle="modal" data-target="#ModalSandwich"
+                      src="assets/img/sandwich.jpg" alt="foto-sandwich" class="img-thumbnail">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Aperitivo -->
+    <div class="modal fade" id="ModalAperitivo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <h2 class="modal-title" id="exampleModalLabel">Aperitivos Sensuales</h2>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-center">
+            <div class="mapa">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d89564.71284424076!2d-70.66432050007994!3d-33.46314983743971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2scl!4v1512508250978" width="400" height="300" frameborder="0" style="border:0" allowfullscreen class="img-thumbnail"></iframe>
+            </div>
+            <h3>Aperitivos para todos los gustos</h3>
+            <h4>Contacto</h4>
+      			<p>3481 Melrose Place Beverly Hills, CA 90210</p>
+      			<p><i class="fa fa-phone" aria-hidden="true"></i>  600 555 55 55 Servicio a domicilio</p>
+      			<p><i class="fa fa-envelope" aria-hidden="true"></i> <a href="#">foodmap@live.cl</a></p>
+          </div>
+          <div class="modal-footer text-center">
+            <button type="button" class="btn btn-lg btn-primary">Pedir Ahora</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Carnes -->
+    <div class="modal fade" id="ModalCarnes" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <h2 class="modal-title" id="exampleModalLabel">Carnes Sensuales</h2>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-center">
+            <div class="mapa">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d89564.71284424076!2d-70.66432050007994!3d-33.46314983743971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2scl!4v1512508250978" width="400" height="300" frameborder="0" style="border:0" allowfullscreen class="img-thumbnail"></iframe>
+            </div>
+            <h3>Carnes para todos los gustos</h3>
+            <h4>Contacto</h4>
+            <p>3481 Melrose Place Beverly Hills, CA 90210</p>
+            <p><i class="fa fa-phone" aria-hidden="true"></i>  600 555 55 55 Servicio a domicilio</p>
+            <p><i class="fa fa-envelope" aria-hidden="true"></i> <a href="#">foodmap@live.cl</a></p>
+          </div>
+          <div class="modal-footer text-center">
+            <button type="button" class="btn btn-lg btn-primary">Pedir Ahora</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Ensaladas -->
+    <div class="modal fade" id="ModalEnsaladas" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <h2 class="modal-title" id="exampleModalLabel">Ensaladas Sensuales</h2>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-center">
+            <div class="mapa">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d89564.71284424076!2d-70.66432050007994!3d-33.46314983743971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2scl!4v1512508250978" width="400" height="300" frameborder="0" style="border:0" allowfullscreen class="img-thumbnail"></iframe>
+            </div>
+            <h3>Ensaladas para todos los gustos</h3>
+            <h4>Contacto</h4>
+            <p>3481 Melrose Place Beverly Hills, CA 90210</p>
+            <p><i class="fa fa-phone" aria-hidden="true"></i>  600 555 55 55 Servicio a domicilio</p>
+            <p><i class="fa fa-envelope" aria-hidden="true"></i> <a href="#">foodmap@live.cl</a></p>
+          </div>
+          <div class="modal-footer text-center">
+            <button type="button" class="btn btn-lg btn-primary">Pedir Ahora</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Japonesa -->
+    <div class="modal fade" id="ModalJaponesa" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <h2 class="modal-title" id="exampleModalLabel">Japonesa Sensual</h2>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-center">
+            <div class="mapa">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d89564.71284424076!2d-70.66432050007994!3d-33.46314983743971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2scl!4v1512508250978" width="400" height="300" frameborder="0" style="border:0" allowfullscreen class="img-thumbnail"></iframe>
+            </div>
+            <h3>Japonesa para todos los gustos</h3>
+            <h4>Contacto</h4>
+            <p>3481 Melrose Place Beverly Hills, CA 90210</p>
+            <p><i class="fa fa-phone" aria-hidden="true"></i>  600 555 55 55 Servicio a domicilio</p>
+            <p><i class="fa fa-envelope" aria-hidden="true"></i> <a href="#">foodmap@live.cl</a></p>
+          </div>
+          <div class="modal-footer text-center">
+            <button type="button" class="btn btn-lg btn-primary">Pedir Ahora</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Pizza -->
+    <div class="modal fade" id="ModalPizza" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <h2 class="modal-title" id="exampleModalLabel">Pizza Sensual</h2>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-center">
+            <div class="mapa">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d89564.71284424076!2d-70.66432050007994!3d-33.46314983743971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2scl!4v1512508250978" width="400" height="300" frameborder="0" style="border:0" allowfullscreen class="img-thumbnail"></iframe>
+            </div>
+            <h3>Pizza para todos los gustos</h3>
+            <h4>Contacto</h4>
+            <p>3481 Melrose Place Beverly Hills, CA 90210</p>
+            <p><i class="fa fa-phone" aria-hidden="true"></i>  600 555 55 55 Servicio a domicilio</p>
+            <p><i class="fa fa-envelope" aria-hidden="true"></i> <a href="#">foodmap@live.cl</a></p>
+          </div>
+          <div class="modal-footer text-center">
+            <button type="button" class="btn btn-lg btn-primary">Pedir Ahora</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Sandwich -->
+    <div class="modal fade" id="ModalSandwich" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <h2 class="modal-title" id="exampleModalLabel">Sandwich Sensual</h2>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-center">
+            <div class="mapa">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d89564.71284424076!2d-70.66432050007994!3d-33.46314983743971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2scl!4v1512508250978" width="400" height="300" frameborder="0" style="border:0" allowfullscreen class="img-thumbnail"></iframe>
+            </div>
+            <h3>Sandwich para todos los gustos</h3>
+            <h4>Contacto</h4>
+            <p>3481 Melrose Place Beverly Hills, CA 90210</p>
+            <p><i class="fa fa-phone" aria-hidden="true"></i>  600 555 55 55 Servicio a domicilio</p>
+            <p><i class="fa fa-envelope" aria-hidden="true"></i> <a href="#">foodmap@live.cl</a></p>
+          </div>
+          <div class="modal-footer text-center">
+            <button type="button" class="btn btn-lg btn-primary">Pedir Ahora</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
